@@ -1,0 +1,20 @@
+= Apiary REST Api Kotlin Client
+
+== Setup
+
+All preferences available inside *application.properties*. You can override this properties with *application-custom.properties*.
+
+== Available properties
+
+
+https://login.apiary.io/tokens
+
+* server.port - port on with proxy will be started (default: 8808)
+
+== How to add new method?
+
+Just reverse Apiary ruby client. https://docs.apiary.io/tools/apiary-cli/
+
+== Contribution
+
+Please leave feedback, create issues and make pull request!

@@ -1,0 +1,35 @@
+buildscript {
+    ext {
+        ext.kotlin_version = "1.0.0-beta-4584"
+        ext.gradle_version = "2.10"
+    }
+
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'kotlin'
+apply plugin: 'application'
+
+repositories {
+    jcenter()
+}
+
+mainClassName = "by.heap.apiary.api.ApiaryKt"
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile "org.apache.httpcomponents:fluent-hc:4.5"
+
+    compile "com.fasterxml.jackson.module:jackson-module-kotlin:2.6.4"
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = "$gradle_version"
+    distributionUrl = "http://services.gradle.org/distributions/gradle-${gradle_version}-bin.zip"
+}

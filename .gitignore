@@ -1,0 +1,12 @@
+.idea/
+*.iml
+*.iws
+*.ipr
+
+build
+.gradle
+
+*-custom.properties
+
+api-preview.html
+*.fetched
