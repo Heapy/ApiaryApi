@@ -14,7 +14,7 @@ object Preview {
           <script src="https://api.apiary.io/seeds/embed.js"></script>
           <script>
             var embed = new Apiary.Embed({
-              apiBlueprint: "${escape(file)}"
+              apiBlueprint: `${escape(file)}`
             });
           </script>
         </body>

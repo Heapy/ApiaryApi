@@ -24,4 +24,7 @@ class CommandLineInterface {
 
     @Parameter(names = arrayOf("-op"), description = "Type of operation {publish, fetch, preview}.")
     val operation: String = "preview"
+
+    @Parameter(names = arrayOf("--help", "-h"), help = true)
+    val help: Boolean = false
 }
