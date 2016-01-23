@@ -1,5 +1,12 @@
 = Apiary REST Api Kotlin Client
 
+== Build
+
+image:https://travis-ci.org/Heapy/ApiaryApi.svg?branch=master["Build Status", link="https://travis-ci.org/Heapy/ApiaryApi"]
+
+
+    ./gradlew build
+
 == Setup
 
 All preferences available inside *application.properties*.
