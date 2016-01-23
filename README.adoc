@@ -18,3 +18,9 @@ Just reverse Apiary ruby client. https://docs.apiary.io/tools/apiary-cli/
 == Contribution
 
 Please leave feedback, create issues and make pull request!
+
+== Links
+
+https://apiblueprint.org/
+https://github.com/apiaryio/apiary-client
+https://github.com/danielgtaylor/aglio
