@@ -1,0 +1,10 @@
+apply plugin: 'application'
+
+mainClassName = "by.heap.apiary.api.ApiaryKt"
+
+dependencies {
+    compile project(":apiary-api-lib")
+
+    compile "com.beust:jcommander:1.48"
+    compile "junit:junit:4.12"
+}

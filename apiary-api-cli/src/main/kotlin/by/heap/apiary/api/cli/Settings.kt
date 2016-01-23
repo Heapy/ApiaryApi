@@ -1,6 +1,7 @@
-package by.heap.apiary.api
+package by.heap.apiary.api.cli
 
-import java.util.*
+import java.util.Arrays
+import java.util.Properties
 
 class Settings(val settings: String) {
 
