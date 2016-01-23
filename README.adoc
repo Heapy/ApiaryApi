@@ -2,14 +2,37 @@
 
 == Setup
 
-All preferences available inside *application.properties*. You can override this properties with *application-custom.properties*.
+All preferences available inside *application.properties*.
+You can override this properties with *application-custom.properties*.
 
 == Available properties
 
+* input.file - Api blueprint to publish or preview
+* output.file - preview output file
+* project.name - name of project in apiary.io
+* user.token - user's token from https://login.apiary.io/tokens
 
-https://login.apiary.io/tokens
+== CLI
 
-* server.port - port on with proxy will be started (default: 8808)
+    Usage: <main class> [options]
+      Options:
+        --help, -h
+           Default: false
+        -input
+           Input api blueprint file.
+           Default: apiary.apib
+        -name
+           Name of Apiary project.
+           Default: exampleapi27
+        -op
+           Type of operation {publish, fetch, preview}.
+           Default: preview
+        -output
+           Output api blueprint preview file.
+           Default: api-preview.html
+        -token
+           Apiary user's token.
+           Default: a4a743b5607cb88f1d2f24faaa0afc51
 
 == How to add new method?
 
@@ -19,8 +42,14 @@ Just reverse Apiary ruby client. https://docs.apiary.io/tools/apiary-cli/
 
 Please leave feedback, create issues and make pull request!
 
-== Links
+== TODO
 
-https://apiblueprint.org/
-https://github.com/apiaryio/apiary-client
-https://github.com/danielgtaylor/aglio
+* [line-through]#Move from bash to java#
+* [line-through]#Move from java to Kotlin#
+* [line-through]#Separate on lib and cli modules#
+* Publish lib
+
+== Links
+* https://apiblueprint.org/
+* https://github.com/apiaryio/apiary-client
+* https://github.com/danielgtaylor/aglio
